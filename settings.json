@@ -1,0 +1,11 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "explorer.confirmDelete": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "solidity.nodemodulespackage": "sol",
+    "solidity.remappingsWindows": [
+    
+    ]
+}

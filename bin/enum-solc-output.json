@@ -1,0 +1,537 @@
+{
+    "contracts": {
+        "d:/Solidity/enum.sol": {
+            "BlockchainOracles": {
+                "abi": [
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "getChoice",
+                        "outputs": [
+                            {
+                                "internalType": "enum BlockchainOracles.oracles",
+                                "name": "",
+                                "type": "uint8"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [],
+                        "name": "setLarge",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "getDefaultChoice",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "pure",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "methods": {}
+                },
+                "evm": {
+                    "bytecode": {
+                        "linkReferences": {},
+                        "object": "608060405234801561001057600080fd5b5060dc8061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c806367cb61b6146041578063694ebe4f14606a578063843f7258146072575b600080fd5b6047608a565b60405180826002811115605657fe5b60ff16815260200191505060405180910390f35b60706093565b005b607860a2565b60408051918252519081900360200190f35b60005460ff1690565b6000805460ff19166002179055565b60019056fea265627a7a723158204f2bf9aa03694fe892728d0e8c4959286dc040ef45c685b23c84865e2c4ed68f64736f6c634300050b0032",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xDC DUP1 PUSH2 0x1F PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x3C JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x67CB61B6 EQ PUSH1 0x41 JUMPI DUP1 PUSH4 0x694EBE4F EQ PUSH1 0x6A JUMPI DUP1 PUSH4 0x843F7258 EQ PUSH1 0x72 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x47 PUSH1 0x8A JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 PUSH1 0x2 DUP2 GT ISZERO PUSH1 0x56 JUMPI INVALID JUMPDEST PUSH1 0xFF AND DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x70 PUSH1 0x93 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x78 PUSH1 0xA2 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x0 SLOAD PUSH1 0xFF AND SWAP1 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND PUSH1 0x2 OR SWAP1 SSTORE JUMP JUMPDEST PUSH1 0x1 SWAP1 JUMP INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 0x4f 0x2b 0xf9 0xaa SUB PUSH10 0x4FE892728D0E8C495928 PUSH14 0xC040EF45C685B23C84865E2C4ED6 DUP16 PUSH5 0x736F6C6343 STOP SDIV SIGNEXTEND STOP ORIGIN ",
+                        "sourceMap": "27:385:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:385:0;;;;;;;"
+                    },
+                    "deployedBytecode": {
+                        "linkReferences": {},
+                        "object": "6080604052348015600f57600080fd5b5060043610603c5760003560e01c806367cb61b6146041578063694ebe4f14606a578063843f7258146072575b600080fd5b6047608a565b60405180826002811115605657fe5b60ff16815260200191505060405180910390f35b60706093565b005b607860a2565b60408051918252519081900360200190f35b60005460ff1690565b6000805460ff19166002179055565b60019056fea265627a7a723158204f2bf9aa03694fe892728d0e8c4959286dc040ef45c685b23c84865e2c4ed68f64736f6c634300050b0032",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x3C JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x67CB61B6 EQ PUSH1 0x41 JUMPI DUP1 PUSH4 0x694EBE4F EQ PUSH1 0x6A JUMPI DUP1 PUSH4 0x843F7258 EQ PUSH1 0x72 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x47 PUSH1 0x8A JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 PUSH1 0x2 DUP2 GT ISZERO PUSH1 0x56 JUMPI INVALID JUMPDEST PUSH1 0xFF AND DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x70 PUSH1 0x93 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x78 PUSH1 0xA2 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x0 SLOAD PUSH1 0xFF AND SWAP1 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT AND PUSH1 0x2 OR SWAP1 SSTORE JUMP JUMPDEST PUSH1 0x1 SWAP1 JUMP INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 0x4f 0x2b 0xf9 0xaa SUB PUSH10 0x4FE892728D0E8C495928 PUSH14 0xC040EF45C685B23C84865E2C4ED6 DUP16 PUSH5 0x736F6C6343 STOP SDIV SIGNEXTEND STOP ORIGIN ",
+                        "sourceMap": "27:385:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:385:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;236:75;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;176:56;;;:::i;:::-;;315:92;;;:::i;:::-;;;;;;;;;;;;;;;;236:75;278:7;299:6;;;236:75;:::o;176:56::-;205:6;:21;;-1:-1:-1;;205:21:0;214:12;205:21;;;176:56::o;315:92::-;155:16;;315:92::o"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "44000",
+                            "executionCost": "93",
+                            "totalCost": "44093"
+                        },
+                        "external": {
+                            "getChoice()": "421",
+                            "getDefaultChoice()": "220",
+                            "setLarge()": "20368"
+                        }
+                    },
+                    "methodIdentifiers": {
+                        "getChoice()": "67cb61b6",
+                        "getDefaultChoice()": "843f7258",
+                        "setLarge()": "694ebe4f"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.5.11+commit.c082d0b4\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getChoice\",\"outputs\":[{\"internalType\":\"enum BlockchainOracles.oracles\",\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"setLarge\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getDefaultChoice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/Solidity/enum.sol\":\"BlockchainOracles\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/Solidity/enum.sol\":{\"keccak256\":\"0x317a4c3a2bfd26a1746ec7c904bc4e6b93b3d7425fa96331770eb7818d1d4af7\",\"urls\":[\"bzz-raw://60b6ae724a0b2a7bbd75a09cd0f5d420ee035510461c5006a37bef8699a9945c\",\"dweb:/ipfs/QmasR6YHGYnFcErcYsjmtup1PynAEpeFKEikz2CxQbdMKW\"]}},\"version\":1}",
+                "userdoc": {
+                    "methods": {}
+                }
+            }
+        }
+    },
+    "sources": {
+        "d:/Solidity/enum.sol": {
+            "ast": {
+                "absolutePath": "d:/Solidity/enum.sol",
+                "exportedSymbols": {
+                    "BlockchainOracles": [
+                        39
+                    ]
+                },
+                "id": 40,
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            ">",
+                            "0.4",
+                            ".0"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "0:23:0"
+                    },
+                    {
+                        "baseContracts": [],
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "documentation": null,
+                        "fullyImplemented": true,
+                        "id": 39,
+                        "linearizedBaseContracts": [
+                            39
+                        ],
+                        "name": "BlockchainOracles",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "canonicalName": "BlockchainOracles.oracles",
+                                "id": 5,
+                                "members": [
+                                    {
+                                        "id": 2,
+                                        "name": "Alechemy",
+                                        "nodeType": "EnumValue",
+                                        "src": "73:8:0"
+                                    },
+                                    {
+                                        "id": 3,
+                                        "name": "Mooralis",
+                                        "nodeType": "EnumValue",
+                                        "src": "83:8:0"
+                                    },
+                                    {
+                                        "id": 4,
+                                        "name": "flux",
+                                        "nodeType": "EnumValue",
+                                        "src": "93:4:0"
+                                    }
+                                ],
+                                "name": "oracles",
+                                "nodeType": "EnumDefinition",
+                                "src": "59:40:0"
+                            },
+                            {
+                                "constant": false,
+                                "id": 7,
+                                "name": "choice",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 39,
+                                "src": "103:14:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_enum$_oracles_$5",
+                                    "typeString": "enum BlockchainOracles.oracles"
+                                },
+                                "typeName": {
+                                    "contractScope": null,
+                                    "id": 6,
+                                    "name": "oracles",
+                                    "nodeType": "UserDefinedTypeName",
+                                    "referencedDeclaration": 5,
+                                    "src": "103:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_enum$_oracles_$5",
+                                        "typeString": "enum BlockchainOracles.oracles"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": true,
+                                "id": 11,
+                                "name": "defaultChoice",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 39,
+                                "src": "122:49:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_enum$_oracles_$5",
+                                    "typeString": "enum BlockchainOracles.oracles"
+                                },
+                                "typeName": {
+                                    "contractScope": null,
+                                    "id": 8,
+                                    "name": "oracles",
+                                    "nodeType": "UserDefinedTypeName",
+                                    "referencedDeclaration": 5,
+                                    "src": "122:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_enum$_oracles_$5",
+                                        "typeString": "enum BlockchainOracles.oracles"
+                                    }
+                                },
+                                "value": {
+                                    "argumentTypes": null,
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 9,
+                                        "name": "oracles",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 5,
+                                        "src": "155:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_type$_t_enum$_oracles_$5_$",
+                                            "typeString": "type(enum BlockchainOracles.oracles)"
+                                        }
+                                    },
+                                    "id": 10,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "memberName": "Mooralis",
+                                    "nodeType": "MemberAccess",
+                                    "referencedDeclaration": null,
+                                    "src": "155:16:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_enum$_oracles_$5",
+                                        "typeString": "enum BlockchainOracles.oracles"
+                                    }
+                                },
+                                "visibility": "internal"
+                            },
+                            {
+                                "body": {
+                                    "id": 19,
+                                    "nodeType": "Block",
+                                    "src": "203:29:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 17,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "argumentTypes": null,
+                                                    "id": 14,
+                                                    "name": "choice",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 7,
+                                                    "src": "205:6:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_oracles_$5",
+                                                        "typeString": "enum BlockchainOracles.oracles"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "argumentTypes": null,
+                                                    "expression": {
+                                                        "argumentTypes": null,
+                                                        "id": 15,
+                                                        "name": "oracles",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 5,
+                                                        "src": "214:7:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_type$_t_enum$_oracles_$5_$",
+                                                            "typeString": "type(enum BlockchainOracles.oracles)"
+                                                        }
+                                                    },
+                                                    "id": 16,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "lValueRequested": false,
+                                                    "memberName": "flux",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": null,
+                                                    "src": "214:12:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_enum$_oracles_$5",
+                                                        "typeString": "enum BlockchainOracles.oracles"
+                                                    }
+                                                },
+                                                "src": "205:21:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_enum$_oracles_$5",
+                                                    "typeString": "enum BlockchainOracles.oracles"
+                                                }
+                                            },
+                                            "id": 18,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "205:21:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 20,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "setLarge",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 12,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "193:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 13,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "203:0:0"
+                                },
+                                "scope": 39,
+                                "src": "176:56:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 27,
+                                    "nodeType": "Block",
+                                    "src": "287:24:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 25,
+                                                "name": "choice",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 7,
+                                                "src": "299:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_enum$_oracles_$5",
+                                                    "typeString": "enum BlockchainOracles.oracles"
+                                                }
+                                            },
+                                            "functionReturnParameters": 24,
+                                            "id": 26,
+                                            "nodeType": "Return",
+                                            "src": "292:13:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 28,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "getChoice",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 21,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "254:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 24,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 23,
+                                            "name": "",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 28,
+                                            "src": "278:7:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_enum$_oracles_$5",
+                                                "typeString": "enum BlockchainOracles.oracles"
+                                            },
+                                            "typeName": {
+                                                "contractScope": null,
+                                                "id": 22,
+                                                "name": "oracles",
+                                                "nodeType": "UserDefinedTypeName",
+                                                "referencedDeclaration": 5,
+                                                "src": "278:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_enum$_oracles_$5",
+                                                    "typeString": "enum BlockchainOracles.oracles"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "277:9:0"
+                                },
+                                "scope": 39,
+                                "src": "236:75:0",
+                                "stateMutability": "view",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 37,
+                                    "nodeType": "Block",
+                                    "src": "370:37:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "arguments": [
+                                                    {
+                                                        "argumentTypes": null,
+                                                        "id": 34,
+                                                        "name": "defaultChoice",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 11,
+                                                        "src": "387:13:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_enum$_oracles_$5",
+                                                            "typeString": "enum BlockchainOracles.oracles"
+                                                        }
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_enum$_oracles_$5",
+                                                            "typeString": "enum BlockchainOracles.oracles"
+                                                        }
+                                                    ],
+                                                    "id": 33,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "lValueRequested": false,
+                                                    "nodeType": "ElementaryTypeNameExpression",
+                                                    "src": "382:4:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_type$_t_uint256_$",
+                                                        "typeString": "type(uint256)"
+                                                    },
+                                                    "typeName": "uint"
+                                                },
+                                                "id": 35,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "typeConversion",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "382:19:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "functionReturnParameters": 32,
+                                            "id": 36,
+                                            "nodeType": "Return",
+                                            "src": "375:26:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 38,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "getDefaultChoice",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 29,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "340:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 32,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 31,
+                                            "name": "",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 38,
+                                            "src": "364:4:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 30,
+                                                "name": "uint",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "364:4:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "363:6:0"
+                                },
+                                "scope": 39,
+                                "src": "315:92:0",
+                                "stateMutability": "pure",
+                                "superFunction": null,
+                                "visibility": "public"
+                            }
+                        ],
+                        "scope": 40,
+                        "src": "27:385:0"
+                    }
+                ],
+                "src": "0:412:0"
+            },
+            "id": 0
+        }
+    }
+}
