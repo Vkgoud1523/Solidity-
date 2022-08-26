@@ -2,11 +2,11 @@ pragma solidity >0.4.0;
 
 contract BlockchainOracles {
 
-enum oracles{ Alechemy, Mooralis, flux }
+enum oracles{ Alechemy, Mooraliss, flux }
 
 oracles choice;
 
-oracles constant defaultChoice = oracles.Mooralis;
+oracles constant defaultChoice = oracles.Mooraliss;
 
 function setLarge() public { choice = oracles.flux;
 
